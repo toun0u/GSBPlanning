@@ -5,6 +5,7 @@ namespace Sio\GsbBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use models;
 use Symfony\Component\HTTPFoundation\Request;
+use Symfony\Component\HTTPFoundation\Session\Session;
 
 class DefaultController extends Controller
 {
@@ -30,7 +31,9 @@ class DefaultController extends Controller
 			}else{
 				if ($mdp == $res[0]['mdp'])
 				{
-					$msg = "Connexion réussie";
+					$_SESSION['user'] = $res[0]['Nom'].' '.$res[0]['Prenom'];
+					$msg = $_SESSION['user'];
+
 				}else{
 					$msg = "Mot de passe incorrect";
 				}
