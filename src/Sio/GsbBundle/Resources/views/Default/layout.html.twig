@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<!-- TITRE ET MENUS -->
+<html lang="fr">
+<head>
+    <title>
+        {% block title %}
+            GSB Planning
+        {% endblock %}
+    </title>
+
+    <meta http-equiv="Content-Language" content="fr">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/cssGeneral.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+<body >
+<div id="bandeau">
+   <!-- L'image du bandeau -->
+    <img src="{{ asset('images/BourSiQuote_Ban.png') }}"  	alt="Bour" title="Bour"/>
+</div>
+
+<div id="userco" align="right">
+    Bonjour, {{ user }}. Tu peux te déconnecter en cliquant <a href={{ path("sio_gsb_homepage") }}>ici</a>
+</div>
+
+<!--  Menu haut-->
+<div style="text-align: center;"><ul id="menu">
+        <li><a href={{ path("sio_gsb_homepage") }}> Accueil </a></li>
+        <li><a href={{ path("sio_gsb_dashboard") }}> Recherche </a></li>
+        <li><a href={{ path("sio_gsb_dashboard") }}> Événement </a></li>
+    </ul></div>
+
+
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
