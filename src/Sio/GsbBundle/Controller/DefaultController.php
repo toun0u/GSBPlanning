@@ -4,6 +4,8 @@ namespace Sio\GsbBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use models;
+use Symfony\Component\HTTPFoundation\Request;
+use Symfony\Component\HTTPFoundation\Session\Session;
 
 class DefaultController extends Controller
 {
@@ -16,9 +18,11 @@ class DefaultController extends Controller
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
 
+		return $this->render('SioGsbBundle:Default:index.html.twig', array('msg'=>'trkill'));
+	}
+
 	public function connexionAction(Request $request)
 	{
-		dump($request);
 		if($request->request->has('valider'))
 		{
 			$msg = "";
@@ -26,19 +30,22 @@ class DefaultController extends Controller
 			$mdp = $request->get('password');
 			$dao = models\DAOUser::getDaoUser();
 			$res = $dao->getUserById($mail);
-			if(count($res == 0))
+			dump($res[0]['mdp']);
+			if(count($res)==0)
 			{
 				$msg = "identifiant non valide";
 			}else{
-				if ($mdp == $res['mdp'])
+				if ($mdp == $res[0]['mdp'])
 				{
-					$msg = "Connexion réussie";
+					$_SESSION['user'] = $res[0]['Nom'].' '.$res[0]['Prenom'];
+					$msg = $_SESSION['user'];
+
 				}else{
 					$msg = "Mot de passe incorrect";
 				}
 			}
 
 		}
-		return $this->render('SioGsbBundle:Default:index.html.twig');
+		return $this->render('SioGsbBundle:Default:index.html.twig', array('msg'=>$msg));
 	}
 }
