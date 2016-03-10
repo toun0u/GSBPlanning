@@ -4,3 +4,6 @@ sio_gsb_homepage:
 sio_gsb_connexion:
     path:    /connexion
     defaults: { _controller: SioGsbBundle:Default:connexion}
+sio_gsb_dashboard:
+    path:    /dashboard
+    defaults: {_controller: SioGsbBundle:Default:dashboard}

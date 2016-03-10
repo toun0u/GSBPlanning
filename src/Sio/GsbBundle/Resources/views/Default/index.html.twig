@@ -1,14 +1,19 @@
-<form name="connexion" method="POST" action = {{ path('sio_gsb_connexion') }}>
-	<fieldset>
-		<legend>Connexion</legend>
-			<label for="email">Email:</label>
-			<input type="mail" name="email" required>
-			</BR>
-			<label for="password">Password:</label>
-			<input type="password" name="password" required>
-			</BR>
-			<input type="submit" value="Valider" name="valider">
-			<input type="reset" value="Annuler" name="annuler">
-	</fieldset>
-	{{ msg }}
-</form>
+
+<link rel="stylesheet" type="text/css" href="{{ asset('css/cssGeneral.css') }}">
+<div id="bandeau">
+	<!-- L'image du bandeau -->
+	<img src="{{ asset('images/BourSiQuote_Ban.png') }}"  	alt="Bour" title="Bour"/>
+</div>
+	<form name="connexion" method="POST">
+		<fieldset>
+			<legend>Connexion</legend>
+				<label for="email">Email:</label>
+				<input type="mail" name="email" required>
+				</BR>
+				<label for="password">Password:</label>
+				<input type="password" name="password" required>
+				</BR>
+				<input type="submit" value="Valider" name="valider">
+				<input type="reset" value="Annuler" name="annuler">
+		</fieldset>
+	</form>
