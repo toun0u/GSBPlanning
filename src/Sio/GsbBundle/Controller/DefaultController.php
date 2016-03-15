@@ -11,7 +11,7 @@ class DefaultController extends Controller
 {
 	public function indexAction()
 	{
-		return $this->render('SioGsbBundle:Default:index.html.twig', array('user'=>'tto'));
+		return $this->render('SioGsbBundle:Default:index.html.twig');
 	}
 	public function dashboardAction()
 	{
