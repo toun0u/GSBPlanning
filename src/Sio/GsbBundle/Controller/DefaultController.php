@@ -18,9 +18,6 @@ class DefaultController extends Controller
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
 
-		return $this->render('SioGsbBundle:Default:index.html.twig', array('msg'=>'trkill'));
-	}
-
 	public function connexionAction(Request $request)
 	{
 		if($request->request->has('valider'))
@@ -30,10 +27,11 @@ class DefaultController extends Controller
 			$mdp = $request->get('password');
 			$dao = models\DAOUser::getDaoUser();
 			$res = $dao->getUserById($mail);
-			dump($res[0]['mdp']);
+			//dump($res[0]['mdp']);
 			if(count($res)==0)
 			{
 				$msg = "identifiant non valide";
+				return $this->render('SioGsbBundle:Default:index.html.twig', array('user' =>$msg));
 			}else{
 				if ($mdp == $res[0]['mdp'])
 				{
@@ -41,11 +39,12 @@ class DefaultController extends Controller
 					$msg = $_SESSION['user'];
 
 				}else{
-					$msg = "Mot de passe incorrect";
+					$msg = "Authentification incorrect";
+					return $this->render('SioGsbBundle:Default:index.html.twig', array('user' =>$msg));
 				}
 			}
 
 		}
-		return $this->render('SioGsbBundle:Default:index.html.twig', array('msg'=>$msg));
+		return $this->render('SioGsbBundle:Default:dashboard.html.twig', array('user' =>$msg));
 	}
 }

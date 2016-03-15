@@ -4,7 +4,7 @@
 	<!-- L'image du bandeau -->
 	<img src="{{ asset('images/BourSiQuote_Ban.png') }}"  	alt="Bour" title="Bour"/>
 </div>
-	<form name="connexion" method="POST">
+	<form name="connexion" method="POST" action="{{ path('sio_gsb_connexion') }}">
 		<fieldset>
 			<legend>Connexion</legend>
 				<label for="email">Email:</label>
@@ -16,4 +16,5 @@
 				<input type="submit" value="Valider" name="valider">
 				<input type="reset" value="Annuler" name="annuler">
 		</fieldset>
+	{{ user }}
 	</form>
