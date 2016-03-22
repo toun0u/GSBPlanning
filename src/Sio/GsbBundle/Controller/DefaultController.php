@@ -17,6 +17,10 @@ class DefaultController extends Controller
 	{
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
+	public function calendarAction()
+	{
+		return $this->render('SioGsbBundle:Default:calendar.html.twig');
+	}
 
 	public function connexionAction(Request $request)
 	{

@@ -7,3 +7,6 @@ sio_gsb_connexion:
 sio_gsb_dashboard:
     path:    /dashboard
     defaults: {_controller: SioGsbBundle:Default:dashboard}
+sio_gsb_calendar:
+    path: /calendar
+    defaults: {_controller: SioGsbBundle:Default:calendar}
