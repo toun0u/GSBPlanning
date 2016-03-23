@@ -16,9 +16,16 @@
     <script src='/gsbplanning/web/calendar/lib/moment.min.js'></script>
     <script src='/gsbplanning/web/calendar/lib/jquery.min.js'></script>
     <script src='/gsbplanning/web/calendar/fullcalendar.min.js'></script>
-
+{{ event }}
     <script>
+        var now = new Date();
 
+        var jour  = now.getDate();
+        var mois = now.getMonth();
+        var annee = now.getYear();
+        console.log(jour);
+        console.log(mois);
+        console.log(annee);
         $(document).ready(function() {
 
             $('#calendar').fullCalendar({
@@ -27,22 +34,35 @@
                     center: 'title',
                     right: 'month,agendaWeek,agendaDay'
                 },
-                defaultDate: '2016-01-12',
+                defaultDate: annee-mois-jour,
                 selectable: true,
                 selectHelper: true,
-                select: function(start, end) {
+                select: function(start, end, allDay) {
                     var title = prompt('Event Title:');
-                    var eventData;
                     if (title) {
-                        eventData = {
-                            title: title,
-                            start: start,
-                            end: end
-                        };
-                        $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+                        start = $.fullCalendar.formatDate(start, "yyyy-MM-dd HH:mm:ss");
+                        end = $.fullCalendar.formatDate(end, "yyyy-MM-dd HH:mm:ss");
+                        $.ajax({
+                            url: 'http://localhost/fullcalendar/add_events.php',
+                            data: 'title='+ title+'&start='+ start +'&end='+ end ,
+                            type: "POST",
+                            success: function(json) {
+                                alert('OK');
+                            }
+                        });
+                        calendar.fullCalendar('renderEvent',
+                                {
+                                    title: title,
+                                    start: start,
+                                    end: end,
+                                    allDay: allDay
+                                },
+                                true // make the event "stick"
+                        );
                     }
-                    $('#calendar').fullCalendar('unselect');
+                    calendar.fullCalendar('unselect');
                 },
+
                 editable: true,
                 eventLimit: true, // allow "more" link when too many events
                 events: [
@@ -67,8 +87,8 @@
                     },
                     {
                         title: 'Conference',
-                        start: '2016-01-11',
-                        end: '2016-01-13'
+                        start: '2016-03-23',
+                        end: '2016-03-23'
                     },
                     {
                         title: 'Meeting',
@@ -132,7 +152,7 @@
 <div style="text-align: center;"><ul id="menu">
         <li><a href={{ path("sio_gsb_dashboard") }}> Accueil </a></li>
         <li><a href={{ path("sio_gsb_dashboard") }}> Recherche </a></li>
-        <li><a href={{ path("sio_gsb_dashboard") }}> Événement </a></li>
+        <li><a href={{ path("sio_gsb_dashboard") }}> Ã‰vÃ©nement </a></li>
     </ul></div>
 
 <div id='calendar'></div>

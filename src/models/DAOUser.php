@@ -70,25 +70,30 @@ class DAOUser
 
 	public function getAllEvent()
 	{
-		$req = 'select * from even inner join type on even.id_Type = type.id';
+		$req = 'select even.id, lieu, description, dateDebut, dateFin, id_User, id_Type, type.libelle from even inner join type on even.id_Type = type.id';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
 	public function getEventByName($event)
 	{
-		$req = 'select * from even inner join type on even.id_Type=type.id where description like "%'.$event.'%"';
+		$req = 'select  from even inner join type on even.id_Type=type.id where description like "%'.$event.'%"';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
-	//public function get
 	public function getAllService()
 	{
 		$req = 'select service.id, libelle, Nom, Prenom from service inner join user on service.id_User = user.id';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
+	}
+	public function addEvent($title, $start, $end)
+	{
+		//recupérer les valeurs envoyé
+		$req = 'INSERT INTO evenement (description, dateDebut, dateFin) VALUES ('.$title.','.$start.','.$end.')';
+		$res = DAOUser::$monDao->query($req);
 	}
 
 }
