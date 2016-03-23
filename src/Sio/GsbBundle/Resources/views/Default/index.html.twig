@@ -1,20 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/cssIndex.css') }}">
+        <title>GSBPlanning - Identification</title>
+    </head>
 
-<link rel="stylesheet" type="text/css" href="{{ asset('css/cssGeneral.css') }}">
-<div id="bandeau">
-	<!-- L'image du bandeau -->
-	<img src="{{ asset('images/BourSiQuote_Ban.png') }}"  	alt="Bour" title="Bour"/>
-</div>
-	<form name="connexion" method="POST" action="{{ path('sio_gsb_connexion') }}">
-		<fieldset>
-			<legend>Connexion</legend>
-				<label for="email">Email:</label>
-				<input type="mail" name="email" required>
-				</BR>
-				<label for="password">Password:</label>
-				<input type="password" name="password" required>
-				</BR>
-				<input type="submit" value="Valider" name="valider">
-				<input type="reset" value="Annuler" name="annuler">
-		</fieldset>
-	{{ user }}
-	</form>
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="logo">
+                    <img src="{{ asset('images/BourSiQuote_Ban.png') }}"/>
+                </div>
+            </header>
+
+            <div id="formulaire_identification">
+
+                <br>
+
+                <form name="identification" method="post" action="{{ path('sio_gsb_connexion') }}">
+
+                    <div id="titre">
+                        <div id="titre_formulaire_identification" style="font-size: 24px;">Identification</div>
+                    </div>
+
+                    <br>
+
+                    <div id="input">
+                        <div id="email">
+                            <input type="email" name="email_formulaire_identification" placeholder="E-Mail ID" required="required" value="">
+                        </div>
+                    </div>
+
+                    <div id="input">
+                        <div id="password">
+                            <input type="password" name="password_formulaire_identification" placeholder="Password" required="required" value="">
+                        </div>
+                    </div>
+
+                    <div id="input">
+                        <div id="submit">
+                            <input type="submit" name="submit_formulaire_identification" value="S'identifier">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

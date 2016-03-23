@@ -44,11 +44,11 @@ class DefaultController extends Controller
 
 	public function connexionAction(Request $request)
 	{
-		if($request->request->has('valider'))
-		{
+		if($request->request->has('submit_formulaire_identification'))
+        {
 			$msg = "";
-			$mail = $request->get('email');
-			$mdp = $request->get('password');
+			$mail = $request->get('email_formulaire_identification');
+			$mdp = $request->get('password_formulaire_identification');
 			$dao = models\DAOUser::getDaoUser();
 			$res = $dao->getUserById($mail);
 			//dump($res[0]['mdp']);

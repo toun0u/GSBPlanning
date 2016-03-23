@@ -13,27 +13,53 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/cssGeneral.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        ( function( $ ) {
+            $( document ).ready(function() {
+                $('#cssmenu > ul > li > a').click(function() {
+                    $('#cssmenu li').removeClass('active');
+                    $(this).closest('li').addClass('active');
+                    var checkElement = $(this).next();
+                    if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                        $(this).closest('li').removeClass('active');
+                        checkElement.slideUp('normal');
+                    }
+                    if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                        $('#cssmenu ul ul:visible').slideUp('normal');
+                        checkElement.slideDown('normal');
+                    }
+                    if($(this).closest('li').find('ul').children().length == 0) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                });
+            });
+        } )( jQuery );
+
+    </script>
 
 </head>
 
 <body >
-<div id="bandeau">
-   <!-- L'image du bandeau -->
-    <img src="{{ asset('images/BourSiQuote_Ban.png') }}"  	alt="Bour" title="Bour"/>
-</div>
-
-<div id="userco" align="right">
-    Bonjour, {{ user }}. Tu peux te déconnecter en cliquant <a href={{ path("sio_gsb_homepage") }}>ici</a>
-</div>
-
-<!--  Menu haut-->
-<div style="text-align: center;"><ul id="menu">
-        <li><a href={{ path("sio_gsb_dashboard") }}> Accueil </a></li>
-        <li><a href={{ path("sio_gsb_dashboard") }}> Recherche </a></li>
-        <li><a href={{ path("sio_gsb_calendar") }}> Événement </a></li>
-    </ul></div>
-
-
+    <div id='cssmenu'>
+        <ul>
+            <li class='active'><a href='#'><span>{{ user }}</span></a></li>
+            <li class='has-sub'><a href='#'><span>Accueil</span></a>
+            <li class='has-sub'><a href='#'><span>Recherche..</span></a>
+            <li class='has-sub'><a href='#'><span>Evenements</span></a>
+            <li class='has-sub'><a href='#'><span>Account</span></a>
+                <ul>
+                    <li><a href='#'><span>Changer e-Mail</span></a></li>
+                    <li><a href='#'><span>Changer Password</span></a></li>
+                    <li class='last'><a href={{ path("sio_gsb_homepage") }}><span>Déconnexion</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
 {% block content %}
 {% endblock %}
