@@ -41,6 +41,30 @@ class DefaultController extends Controller
 		//dump($res[0]['id']);
 		return $this->render('SioGsbBundle:Default:calendar.html.twig', array('event' => $json));
 	}
+	public function calendaradminAction()
+	{
+
+		$dao = models\DAOUser::getDaoUser();
+		$res = $dao->getAllEvent();
+		$json = '';
+		$tojson=[];
+
+		for($i=0;$i<count($res);$i++)
+		{
+			$tab=[];
+			for($j=0;$j<8;$j++)
+			{
+				$tab[]=$res[$i][$j];
+			}
+			$tojson[$i]=array('id'=>$tab[0], 'lieu'=>$tab[1], 'description'=>$tab[2], 'dateDebut'=>$tab[3], 'dateFin'=>$tab[4], 'id_User'=>$tab[5], 'id_Type'=>$tab[6], 'Libelle'=>$tab[7]);
+
+		}
+
+		$json = json_encode($tojson,JSON_UNESCAPED_UNICODE);
+
+		//dump($res[0]['id']);
+		return $this->render('SioGsbBundle:Default:calendaradmin.html.twig', array('event' => $json));
+	}
 
 	public function connexionAction(Request $request)
 	{

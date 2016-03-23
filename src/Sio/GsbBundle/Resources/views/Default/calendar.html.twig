@@ -9,22 +9,24 @@
     </title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/cssGeneral.css') }}">
+    <!--<link rel="stylesheet" type="text/css" href="{{ asset('css/cssGeneral.css') }}"-->
     <link href='/gsbplanning/web/calendar/fullcalendar.css' rel='stylesheet' />
     <link href='/gsbplanning/web/calendar/fullcalendar.print.css' rel='stylesheet' media='print' />
     <script src='/gsbplanning/web/calendar/lib/moment.min.js'></script>
     <script src='/gsbplanning/web/calendar/lib/jquery.min.js'></script>
     <script src='/gsbplanning/web/calendar/fullcalendar.min.js'></script>
-    {{ event }}
+
     <script>
         var now = new Date();
 
         var jour  = now.getDate();
-        var mois = now.getMonth();
-        var annee = now.getYear();
+        var mois = now.getMonth()+ 1;
+        var annee = now.getFullYear();
         console.log(jour);
         console.log(mois);
         console.log(annee);
+        var date = annee+'-'+mois+'-'+jour;
+        console.log(date);
         $(document).ready(function() {
 
             $('#calendar').fullCalendar({
@@ -33,10 +35,10 @@
                     center: 'title',
                     right: 'month,agendaWeek,agendaDay'
                 },
-                defaultDate: annee-mois-jour,
+                defaultDate: date,
                 selectable: true,
                 selectHelper: true,
-                select: function(start, end, allDay) {
+                /*select: function(start, end, allDay) {
                     var title = prompt('Event Title:');
                     if (title) {
                         start = $.fullCalendar.formatDate(start, "yyyy-MM-dd HH:mm:ss");
@@ -57,13 +59,13 @@
                                     allDay: allDay
                                 },
                                 true // make the event "stick"
-                        );
+                        )
                     }
                     calendar.fullCalendar('unselect');
-                },
-
-                editable: true,
-                eventLimit: true, // allow "more" link when too many events
+                }
+*/
+                editable: false,
+                eventLimit: false, // allow "more" link when too many events
                 events: [
                     {
                         title: 'All Day Event',
@@ -116,8 +118,8 @@
                     },
                     {
                         title: 'Click for Google',
-                        url: 'http://google.com/',
-                        start: '2016-01-28'
+                        url: 'http://bing.com/',
+                        start: '2016-03-28'
                     }
                 ]
             });
