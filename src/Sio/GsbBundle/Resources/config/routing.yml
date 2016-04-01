@@ -10,3 +10,6 @@ sio_gsb_dashboard:
 sio_gsb_calendar:
     path: /calendar
     defaults: {_controller: SioGsbBundle:Default:calendar}
+sio_gsb_calendaradmin:
+    path: /calendar
+    defaults: {_controller: SioGsbBundle:Default:calendaradmin}

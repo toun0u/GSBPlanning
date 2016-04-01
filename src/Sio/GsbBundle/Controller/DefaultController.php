@@ -93,6 +93,7 @@ class DefaultController extends Controller
 			}
 
 		}
+
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig', array('user' =>$msg));
 	}
 }
