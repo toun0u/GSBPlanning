@@ -37,6 +37,7 @@ class DAOUser
 		return $lesLignes;
 	}
 
+
 	public function getUserByName($name)
 	{
 		$req = "select * from user where Nom = '".$name."'";

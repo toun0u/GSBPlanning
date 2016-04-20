@@ -17,30 +17,7 @@ class DefaultController extends Controller
 	{
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
-	public function calendarAction()
-	{
 
-		$dao = models\DAOUser::getDaoUser();
-		$res = $dao->getAllEvent();
-		$json = '';
-		$tojson=[];
-
-		for($i=0;$i<count($res);$i++)
-		{
-			$tab=[];
-			for($j=0;$j<8;$j++)
-			{
-				$tab[]=$res[$i][$j];
-			}
-			$tojson[$i]=array('id'=>$tab[0], 'lieu'=>$tab[1], 'description'=>$tab[2], 'dateDebut'=>$tab[3], 'dateFin'=>$tab[4], 'id_User'=>$tab[5], 'id_Type'=>$tab[6], 'Libelle'=>$tab[7]);
-
-		}
-
-		$json = json_encode($tojson,JSON_UNESCAPED_UNICODE);
-
-		//dump($res[0]['id']);
-		return $this->render('SioGsbBundle:Default:calendar.html.twig', array('event' => $json));
-	}
 	public function calendaradminAction()
 	{
 
@@ -62,12 +39,14 @@ class DefaultController extends Controller
 
 		$json = json_encode($tojson,JSON_UNESCAPED_UNICODE);
 
-		//dump($res[0]['id']);
+
 		return $this->render('SioGsbBundle:Default:calendaradmin.html.twig', array('event' => $json));
 	}
 
 	public function connexionAction(Request $request)
 	{
+		$session = new Session();
+
 		if($request->request->has('submit_formulaire_identification'))
         {
 			$msg = "";
@@ -75,7 +54,7 @@ class DefaultController extends Controller
 			$mdp = $request->get('password_formulaire_identification');
 			$dao = models\DAOUser::getDaoUser();
 			$res = $dao->getUserById($mail);
-			//dump($res[0]['mdp']);
+
 			if(count($res)==0)
 			{
 				$msg = "identifiant non valide";
@@ -83,8 +62,18 @@ class DefaultController extends Controller
 			}else{
 				if ($mdp == $res[0]['mdp'])
 				{
-					$_SESSION['user'] = $res[0]['Nom'].' '.$res[0]['Prenom'];
-					$msg = $_SESSION['user'];
+					$session->set('nom',$res[0]['Nom']);
+
+
+					$res = $dao->getUserByName($session->get('nom'));
+					if(($res[0]['Type'])== 'admin'){
+						$msg = 'admin';
+					}
+					else{
+						$msg = 'salarie';
+					}
+					$session->set('type',$msg);
+
 
 				}else{
 					$msg = "Authentification incorrect";
