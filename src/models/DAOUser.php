@@ -31,12 +31,19 @@ class DAOUser
 
 	public function getUserById($id)
 	{
-		$req = 'select * from user where mail = "'.$id.'"';
+		$req = 'select * from user where id = "'.$id.'"';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res -> fetchAll();
 		return $lesLignes;
 	}
 
+	public function getUserByMail($mail)
+	{
+		$req = 'select * from user where mail = "'.$mail.'"';
+		$res = DAOUser::$monDao->query($req);
+		$lesLignes = $res -> fetchAll();
+		return $lesLignes;
+	}
 
 	public function getUserByName($name)
 	{
@@ -71,18 +78,19 @@ class DAOUser
 
 	public function getAllEvent()
 	{
-		$req = 'select even.id, lieu, description, dateDebut, dateFin, id_User, id_Type, type.libelle from even inner join type on even.id_Type = type.id';
+		$req = 'select even.id, lieu, description, dateDebut, dateFin, id_User, id_Type, heureDebut, heureFin, type.libelle from even inner join type on even.id_Type = type.id';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
 	public function getEventByName($event)
 	{
-		$req = 'select  from even inner join type on even.id_Type=type.id where description like "%'.$event.'%"';
+		$req = 'select * from even inner join type on even.id_Type=type.id where description like "%'.$event.'%"';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
+	public function getEvenById
 	public function getAllService()
 	{
 		$req = 'select service.id, libelle, Nom, Prenom from service inner join user on service.id_User = user.id';

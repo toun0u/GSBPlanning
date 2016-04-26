@@ -10,3 +10,6 @@ sio_gsb_dashboard:
 sio_gsb_calendaradmin:
     path: /calendaradmin
     defaults: {_controller: SioGsbBundle:Default:calendaradmin}
+sio_gsb_detailEvent:
+    path: /detailEvent/{chaine}/{valeur}
+    defaults: {_controller: SioGsbBundle:Default:detailEvent}

@@ -17,7 +17,12 @@ class DefaultController extends Controller
 	{
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
-
+	public function detailEventAction()
+	{
+		//$dao = models\DAOUser::getDaoUser();
+		//$res = $dao->getUserById();
+		return $this->render('SioGsbBundle:Default:detailEvent.html.twig');
+	}
 	public function calendaradminAction()
 	{
 
@@ -25,20 +30,19 @@ class DefaultController extends Controller
 		$res = $dao->getAllEvent();
 		$json = '';
 		$tojson=[];
-
 		for($i=0;$i<count($res);$i++)
 		{
 			$tab=[];
-			for($j=0;$j<8;$j++)
+			for($j=0;$j<10;$j++)
 			{
 				$tab[]=$res[$i][$j];
 			}
-			$tojson[$i]=array('id'=>$tab[0], 'lieu'=>$tab[1], 'description'=>$tab[2], 'dateDebut'=>$tab[3], 'dateFin'=>$tab[4], 'id_User'=>$tab[5], 'id_Type'=>$tab[6], 'Libelle'=>$tab[7]);
+			$tojson[$i]=array('id'=>$tab[0], 'lieu'=>$tab[1], 'description'=>$tab[2], 'dateDebut'=>$tab[3], 'dateFin'=>$tab[4], 'id_User'=>$tab[5], 'id_Type'=>$tab[6], 'heureDebut'=>$tab[7], 'heureFin'=>$tab[8],'Libelle'=>$tab[9]);
 
 		}
 
-		$json = json_encode($tojson,JSON_UNESCAPED_UNICODE);
-
+		$json = $tojson;//json_encode($tojson,JSON_UNESCAPED_UNICODE);
+		dump($json);
 
 		return $this->render('SioGsbBundle:Default:calendaradmin.html.twig', array('event' => $json));
 	}
@@ -53,7 +57,7 @@ class DefaultController extends Controller
 			$mail = $request->get('email_formulaire_identification');
 			$mdp = $request->get('password_formulaire_identification');
 			$dao = models\DAOUser::getDaoUser();
-			$res = $dao->getUserById($mail);
+			$res = $dao->getUserByMail($mail);
 
 			if(count($res)==0)
 			{
@@ -62,19 +66,8 @@ class DefaultController extends Controller
 			}else{
 				if ($mdp == $res[0]['mdp'])
 				{
-					$session->set('nom',$res[0]['Nom']);
-
-
-					$res = $dao->getUserByName($session->get('nom'));
-					if(($res[0]['Type'])== 'admin'){
-						$msg = 'admin';
-					}
-					else{
-						$msg = 'salarie';
-					}
-					$session->set('type',$msg);
-
-
+					$session->set('nom',$res[0]['Nom'].' '.$res[0]['Prenom']);
+					$msg = $session->get('nom');
 				}else{
 					$msg = "Authentification incorrect";
 					return $this->render('SioGsbBundle:Default:index.html.twig', array('user' =>$msg));
