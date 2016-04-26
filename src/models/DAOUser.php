@@ -90,7 +90,10 @@ class DAOUser
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
-	public function getEvenById
+	public function getEvenByIdUser($id)
+	{
+		$req = "select * from even inner join user on even.id_user = user.id inner join type on even.id_Type=type.id where even.id_user=".$id;
+	}
 	public function getAllService()
 	{
 		$req = 'select service.id, libelle, Nom, Prenom from service inner join user on service.id_User = user.id';
