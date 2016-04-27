@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="902d1e82-1edf-4c5b-a1ac-ef2b6032ba75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/DAOUser.php" afterPath="$PROJECT_DIR$/src/models/DAOUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/public/css/cssGeneral.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GsbPlanning.iws" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="DAOUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.094339">
-              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.6792455">
+              <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
               <folding>
                 <marker date="1461749147949" expanded="true" signature="725:764" placeholder="select * fro..user..." />
                 <marker date="1461749147949" expanded="true" signature="918:961" placeholder="select * fro..user..." />
@@ -66,7 +64,7 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.622642">
+            <state vertical-scroll-proportion="-15.396227">
               <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
               <folding>
                 <element signature="e#44#101#0#PHP" expanded="true" />
@@ -75,21 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.296296">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detailEvent.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detailEvent.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26651737">
-              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -118,18 +106,18 @@
       <file leaf-file-name="dashboard.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-5.230769">
               <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendaradmin.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calendaradmin.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.884615">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.47592387">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -159,7 +147,6 @@
         <option value="$PROJECT_DIR$/web/css/cssGeneral.css" />
         <option value="$PROJECT_DIR$/web/css/fullcalendar.css" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendar.html.twig" />
-        <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig" />
@@ -168,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/models/DAOUser.php" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
+        <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig" />
       </list>
     </option>
   </component>
@@ -648,7 +636,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461740773673</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="push pour mettre tout bien3&#10;">
+      <created>1461750485329</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1461750485329</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -702,7 +696,8 @@
     <MESSAGE value="push qui casse les couilles &#10;" />
     <MESSAGE value="push pour mettre tout bien&#10;" />
     <MESSAGE value="push pour mettre tout bien2&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="push pour mettre tout bien2&#10;" />
+    <MESSAGE value="push pour mettre tout bien3&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="push pour mettre tout bien3&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1141,14 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1157,10 +1144,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1173,18 +1160,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.884615">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19058296">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.396227">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <folding>
+            <element signature="e#44#101#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.094339">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.6792455">
+          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
           <folding>
             <marker date="1461749147949" expanded="true" signature="725:764" placeholder="select * fro..user..." />
             <marker date="1461749147949" expanded="true" signature="918:961" placeholder="select * fro..user..." />
@@ -1214,28 +1227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.296296">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.622642">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding>
-            <element signature="e#44#101#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26651737">
-          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.47592387">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding />
         </state>
       </provider>
