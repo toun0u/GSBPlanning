@@ -138,7 +138,7 @@ class DefaultController extends Controller
 				if ($mdp == $res[0]['mdp'])
 				{
 
-					$session->set('nom',$res[0]['Nom'].' '.$res[0]['Prenom']);
+					$session->set('nom',$res[0]['Prenom'].' '.$res[0]['Nom']);
 					$session->set('user', $res[0]['id']);
 
 				}else{
