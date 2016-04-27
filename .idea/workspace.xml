@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="902d1e82-1edf-4c5b-a1ac-ef2b6032ba75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/DAOUser.php" afterPath="$PROJECT_DIR$/src/models/DAOUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,59 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DAOUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.0">
-              <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
-              <folding>
-                <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-                <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-                <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-                <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-                <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-                <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-                <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-                <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
-                <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
-                <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-                <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
-                <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
-                <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
-                <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
-                <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.773585">
-              <caret line="69" column="48" selection-start-line="68" selection-start-column="52" selection-end-line="69" selection-end-column="48" />
-              <folding>
-                <element signature="e#44#101#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.37037">
-              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detailEvent.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detailEvent.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32362822">
-              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -87,21 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.9910414">
+              <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+              <folding>
+                <element signature="e#44#101#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state vertical-scroll-proportion="-18.346153">
+              <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -110,28 +64,8 @@
       <file leaf-file-name="calendaradmin.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
+            <state vertical-scroll-proportion="-0.65384614">
               <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addEvent.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.076923">
-              <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -157,10 +91,11 @@
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig" />
         <option value="$PROJECT_DIR$/src/models/DAOUser.php" />
-        <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig" />
+        <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/detailEvent.css" />
       </list>
     </option>
   </component>
@@ -274,6 +209,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GsbPlanning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GsbPlanning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,7 +697,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461766700712</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="modif update">
+      <created>1461768578894</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1461768578894</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,7 +782,8 @@
     <MESSAGE value="update fonctionnel" />
     <MESSAGE value="add et supp fonctionnel" />
     <MESSAGE value="modif affichage user" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif affichage user" />
+    <MESSAGE value="modif update" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -884,21 +844,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
           <folding>
-            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
-            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
-            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -958,21 +918,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
-            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
-            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
-            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -1024,21 +984,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
-            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
-            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
-            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -1082,21 +1042,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
-            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
-            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -1207,14 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
@@ -1231,70 +1183,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.076923">
-          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.37037">
+        <state vertical-scroll-proportion="0.4955157">
           <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0">
+        <state vertical-scroll-proportion="0.52407616">
           <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
           <folding>
-            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
-            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
-            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
-            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
-            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="-1:-1" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.773585">
-          <caret line="69" column="48" selection-start-line="68" selection-start-column="52" selection-end-line="69" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.17133258">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#44#101#0#PHP" expanded="true" />
+            <element signature="e#476#500#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/detailEvent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32362822">
-          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.346153">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9910414">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+          <folding>
+            <element signature="e#44#101#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

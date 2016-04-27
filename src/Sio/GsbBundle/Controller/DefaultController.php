@@ -72,7 +72,6 @@ class DefaultController extends Controller
 		$heureDebut = $request->get('heureDebut');
 		$heureFin = $request->get('heureFin');
 		$idTitre = $request->get('titre');
-		dump($idTitre);
 		$dao = models\DAOUser::getDaoUser();
 		$res = $dao->updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id);
 
@@ -95,7 +94,9 @@ class DefaultController extends Controller
 
 	public function addEventAction()
 	{
-		return $this->render('SioGsbBundle:Default:addEvent.html.twig');
+		$dao = models\DAOUser::getDaoUser();
+		$lesTypes = $dao->getAllType();
+		return $this->render('SioGsbBundle:Default:addEvent.html.twig', array('lesTypes' => $lesTypes));
 	}
 
 	public function calendaradminAction()
