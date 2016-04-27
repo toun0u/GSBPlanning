@@ -16,3 +16,12 @@ sio_gsb_detailEvent:
 sio_gsb_updateEvent:
     path: /updateEvent
     defaults: {_controller: SioGsbBundle:Default:updateEvent}
+sio_gsb_addEvent:
+    path: /addEvent
+    defaults: {_controller: SioGsbBundle:Default:addEvent}
+sio_gsb_toaddEvent:
+    path: /toaddEvent
+    defaults: {_controller: SioGsbBundle:Default:toaddEvent}
+sio_gsb_suppEvent:
+    path: /suppEvent
+    defaults: {_controller: SioGsbBundle:Default:suppEvent}
