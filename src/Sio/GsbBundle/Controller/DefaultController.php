@@ -56,7 +56,10 @@ class DefaultController extends Controller
 		$session->set('titre',$res[0]['titre']);
 		$session->set('alltitre', $res1[0]['titre']);
 		$session->set('allidtitre',$res1[0]['id']);
-		return $this->render('SioGsbBundle:Default:detailEvent.html.twig');
+
+        $lesTypes = $dao->getAllType();
+
+		return $this->render('SioGsbBundle:Default:detailEvent.html.twig', array('lesTypes' => $lesTypes));
 	}
 
 	public function updateEventAction(Request $request)

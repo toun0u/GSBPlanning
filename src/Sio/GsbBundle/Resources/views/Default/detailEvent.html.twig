@@ -4,25 +4,86 @@
 
 {% block content %}
 
-    <form name="modificationEvent" method="POST" action="{{ path('sio_gsb_updateEvent') }}">
-        <input type="hidden" name="id" value="{{ app.session.get('id') }}"><br>
-        <font color="#f0ffff">Lieu :</font><input type="text" name="lieu" value="{{ app.session.get('lieu') }}"><br>
-        <font color="#f0ffff">Description :</font><input type="text" name="description" value="{{ app.session.get('description') }}"><br>
-        <font color="#f0ffff">Date Début :</font><input type="date" name="dateDebut" value="{{ app.session.get('dateDebut') }}"><br>
-        <font color="#f0ffff">Date Fin :</font><input type="date" name="dateFin" value="{{ app.session.get('dateFin') }}"><br>
-        <font color="#f0ffff">Heure Début :</font><input type="time" name="heureDebut" value="{{ app.session.get('heureDebut') }}"><br>
-        <font color="#f0ffff">Heure Fin :</font><input type="time" name="heureFin" value="{{ app.session.get('heureFin') }}"><br>
-        <font color="#f0ffff">Type :</font><input type="text" name="titre" value="2"><br>
-        <input type="submit" name="modifier" value="Modifier">
-    </form>
-    <form name="supp" method="POST" action="{{ path('sio_gsb_suppEvent') }}">
-        <input type="hidden" name="id" value="{{ app.session.get('idEven') }}"><br>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detailEvent.css') }}"
+          xmlns="http://www.w3.org/1999/html">
 
-        <input type="submit" name="supp" value="Supprimer">
-    </form>
-    <form name="retour" method="POST" action="{{ path('sio_gsb_calendaradmin') }}">
-    <input type="submit" name="retour" value="Retour">
-</form>
-</center>
+    <div id="bloc_formulaire"
+        <form name="modificationEvent" method="POST" action="{{ path('sio_gsb_updateEvent') }}">
 
+            <br>
+
+            <div id="titre">
+                <div id="titre_modification_event" style="font-size: 24px;">Modification Evenements</div>
+            </div>
+
+            <br>
+
+            <input type="hidden" name="id" value="{{ app.session.get('id') }}">
+
+            <div id="input">
+                <div id="text">
+                    <input type="text" name="lieu" value="{{ app.session.get('lieu') }}">
+                </div>
+            </div>
+
+            <div id="input">
+                <div id="text">
+                    <input type="text" name="description" value="{{ app.session.get('description') }}">
+                </div>
+            </div>
+
+            <div id="input">
+                <div id="date">
+                    <input type="date" name="dateDebut" value="{{ app.session.get('dateDebut') }}">
+                </div>
+            </div>
+
+            <div id="input">
+                <div id="date">
+                    <input type="date" name="dateFin" value="{{ app.session.get('dateFin') }}">
+                </div>
+            </div>
+
+            <div id="input">
+                <div id="time">
+                    <input type="time" name="heureDebut" value="{{ app.session.get('heureDebut') }}">
+                </div>
+            </div>
+
+            <div id="input">
+                <div id="time">
+                    <input type="time" name="heureFin" value="{{ app.session.get('heureFin') }}">
+                </div>
+            </div>
+
+            <div id="select">
+                <select>
+                {% for type in lesTypes %}
+                    <option id="{{ type.id }}">{{ type.titre }}</option>
+                {% endfor %}
+                </select>
+            </div>
+
+            <div id="input">
+                <div id="submit">
+                    <input type="submit" name="modifier" value="Modifier">
+                </div>
+            </div>
+        </form>
+
+        <form name="retour" method="POST" action="{{ path('sio_gsb_calendaradmin') }}">
+            <div id="input">
+                <div id="submit">
+                    <input type="submit" name="retour" value="Annuler">
+                </div>
+            </div>
+        </form>
+    </div>
 {% endblock %}
+
+
+<form name="supp" method="POST" action="{{ path('sio_gsb_suppEvent') }}">
+    <input type="hidden" name="id" value="{{ app.session.get('idEven') }}"><br>
+
+    <input type="submit" name="supp" value="Supprimer">
+</form>
