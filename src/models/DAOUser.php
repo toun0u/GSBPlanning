@@ -118,11 +118,23 @@ class DAOUser
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
-	public function addEvent($title, $start, $end)
+
+	public function suppPart($id)
 	{
-		//recupérer les valeurs envoyé
-		$req = 'INSERT INTO evenement (description, dateDebut, dateFin) VALUES ('.$title.','.$start.','.$end.')';
+		$req = "delete from participer where id_Event=".$id;
 		$res = DAOUser::$monDao->query($req);
+	}
+	public function suppEvent($id)
+	{
+		$req = "delete from even where id=".$id;
+		$res = DAOUser::$monDao->query($req);
+	}
+
+	public function addEvent($lieu, $description, $libelle, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $idUser)
+	{
+		$req = "insert into even (lieu, description, dateDebut, dateFin, id_User, id_type, heureDebut, heureFin, Libelle) values ('".$lieu."', '".$description."', '".$dateDebut."', '".$dateFin."', ".$idUser.", ".$idTitre.", '".$heureDebut."', '".$heureFin."', '".$libelle."')";
+		$res = DAOUser::$monDao->query($req);
+		dump($res);
 	}
 	public function updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id)
 	{

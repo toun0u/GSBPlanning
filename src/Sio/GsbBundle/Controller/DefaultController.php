@@ -9,6 +9,7 @@ use Symfony\Component\HTTPFoundation\Session\Session;
 
 class DefaultController extends Controller
 {
+
 	public function indexAction()
 	{
 		return $this->render('SioGsbBundle:Default:index.html.twig', array('user'=>' '));
@@ -17,12 +18,33 @@ class DefaultController extends Controller
 	{
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
+	public function toaddEventAction(Request $request)
+	{
+
+		$lieu = $request->get('lieu');
+		$description = $request->get('description');
+		$libelle = $request->get('libelle');
+		$dateDebut = $request->get('dateDebut');
+		$dateFin = $request->get('dateFin');
+		$heureDebut = $request->get('heureDebut');
+		$heureFin = $request->get('heureFin');
+		$idTitre = $request->get('titre');
+		$idUser = $request->get('user');
+
+		$dao = models\DAOUser::getDaoUser();
+		$res = $dao->addEvent($lieu, $description, $libelle, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $idUser);
+		dump($res);
+		$response = $this->forward('SioGsbBundle:Default:calendaradmin');
+
+		return $response;
+	}
 	public function detailEventAction($valeur)
 	{
 		$session = new Session();
 
 		$dao = models\DAOUser::getDaoUser();
 		$res = $dao->getEvenByIdUser($valeur);
+
 		$res1 = $dao->getAllType();
 		$session->set('id', $res[0]['id']);
 		$session->set('lieu',$res[0]['lieu']);
@@ -54,9 +76,27 @@ class DefaultController extends Controller
 
 		return $response;
 	}
+	public function suppEventAction(Request $request)
+	{
+		$id = $request->get('id');
+		$dao = models\DAOUser::getDaoUser();
+		$res1 = $dao->suppPart($id);
+
+		$res = $dao->suppEvent($id);
+
+		$response = $this->forward('SioGsbBundle:Default:calendaradmin');
+
+		return $response;
+	}
+
+	public function addEventAction()
+	{
+		return $this->render('SioGsbBundle:Default:addEvent.html.twig');
+	}
+
 	public function calendaradminAction()
 	{
-
+		$session = new Session();
 		$dao = models\DAOUser::getDaoUser();
 		$res = $dao->getAllEvent();
 		$json = '';
@@ -68,8 +108,8 @@ class DefaultController extends Controller
 			{
 				$tab[]=$res[$i][$j];
 			}
+			$session->set('idEven', $tab[0]);
 			$tojson[$i]=array('id'=>$tab[0], 'lieu'=>$tab[1], 'description'=>$tab[2], 'dateDebut'=>$tab[3], 'dateFin'=>$tab[4], 'id_User'=>$tab[5], 'id_Type'=>$tab[6], 'heureDebut'=>$tab[7], 'heureFin'=>$tab[8],'Libelle'=>$tab[9]);
-
 		}
 
 		$json = $tojson;//json_encode($tojson,JSON_UNESCAPED_UNICODE);
@@ -97,7 +137,9 @@ class DefaultController extends Controller
 			}else{
 				if ($mdp == $res[0]['mdp'])
 				{
-					$session->set('nom',$res[0]['Nom'].' '.$res[0]['Prenom']);
+
+					$session->set('nom',$res[0]['Prenom'].' '.$res[0]['Nom']);
+					$session->set('user', $res[0]['id']);
 
 				}else{
 					$msg = "Authentification incorrect";

@@ -34,31 +34,11 @@
                     defaultDate: date,
                     selectable: true,
                     selectHelper: true,
-                    select: function(start, end, allDay) {
-                     var title = prompt('Event Title:');
-                     if (title) {
-                     start = $.fullCalendar.formatDate(start, "yyyy-MM-dd HH:mm:ss");
-                     end = $.fullCalendar.formatDate(end, "yyyy-MM-dd HH:mm:ss");
-                     $.ajax({
-                     url: 'http://localhost/fullcalendar/add_events.php',
-                     data: 'title='+ title+'&start='+ start +'&end='+ end ,
-                     type: "POST",
-                     success: function(json) {
-                     alert('OK');
-                     }
-                     });
-                     calendar.fullCalendar('renderEvent',
-                     {
-                     title: title,
-                     start: start,
-                     end: end,
-                     allDay: allDay
-                     },
-                     true // make the event "stick"
-                     )
-                     }
-                     calendar.fullCalendar('unselect');
-                     },
+                    select: function(event) {
+                        // opens events in a popup window
+                        window.location.replace('http://127.0.0.1/gsbplanning/web/app_dev.php/addEvent');
+                        return false;
+                    },
 
                     editable: true,
                     eventLimit: true, // allow "more" link when too many events
