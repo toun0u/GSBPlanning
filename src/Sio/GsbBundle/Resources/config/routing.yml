@@ -13,3 +13,6 @@ sio_gsb_calendaradmin:
 sio_gsb_detailEvent:
     path: /detailEvent/{chaine}/{valeur}
     defaults: {_controller: SioGsbBundle:Default:detailEvent}
+sio_gsb_updateEvent:
+    path: /updateEvent
+    defaults: {_controller: SioGsbBundle:Default:updateEvent}

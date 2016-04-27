@@ -4,12 +4,19 @@
 
 {% block content %}
 
-    lieu<br>
-    description<br>
-    date debut<br>
-    date fin<br>
-    heure debut<br>
-    heure fin<br>
-    type
+    <form name="modificationEvent" method="POST" action="{{ path('sio_gsb_updateEvent') }}">
+
+        Lieu<input type="TEXT" name="lieu" value="{{ app.session.get('lieu') }}"><br>
+        Description<input type="TEXT" name="description" value="{{ app.session.get('description') }}"><br>
+        Date Début<input type="date" name="dateDebut" value="{{ app.session.get('dateDebut') }}"><br>
+        Date Fin<input type="date" name="dateFin" value="{{ app.session.get('dateFin') }}"><br>
+        Heure Début<input type="time" name="heureDebut" value="{{ app.session.get('heureDebut') }}"><br>
+        Heure Fin<input type="time" name="heureFin" value="{{ app.session.get('heureFin') }}"><br>
+        Type<input type="TEXT" name="titre" value="{{ app.session.get('titre') }}"><br>
+        <input type="submit" name="modifier" value="Modifier">
+    </form>
+    <form name="retour" method="POST" action="{{ path('sio_gsb_retour') }}">
+        <input type="submit" name="retour" value="Annuler">
+    </form>
 
 {% endblock %}

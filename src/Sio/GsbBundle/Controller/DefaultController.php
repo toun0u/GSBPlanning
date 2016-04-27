@@ -17,11 +17,33 @@ class DefaultController extends Controller
 	{
 		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
-	public function detailEventAction()
+	public function detailEventAction($valeur)
 	{
-		//$dao = models\DAOUser::getDaoUser();
-		//$res = $dao->getUserById();
-		return $this->render('SioGsbBundle:Default:detailEvent.html.twig');
+		$session = new Session();
+
+		$dao = models\DAOUser::getDaoUser();
+		$res = $dao->getEvenByIdUser($valeur);
+		$session->set('lieu',$res[0]['lieu']);
+		$session->set('description',$res[0]['description']);
+		$session->set('dateDebut',$res[0]['dateDebut']);
+		$session->set('dateFin',$res[0]['dateFin']);
+		$session->set('heureDebut',$res[0]['heureDebut']);
+		$session->set('heureFin',$res[0]['heureFin']);
+		$session->set('titre',$res[0]['titre']);
+		$msg = $session->get('nom')+$session->get('description')+$session->get('dateDebut')+$session->get('dateFin')+$session->get('heureDebut')+$session->get('heureFin')+$session->get('titre');
+		return $this->render('SioGsbBundle:Default:detailEvent.html.twig', array('even' => $msg));
+	}
+	public function updateEventAction(Request $request)
+	{
+		$lieu = $request->get('lieu');
+		$description = $request->get('description');
+		$dateDebut = $request->get('dateDebut');
+		$dateFin = $request->get('dateFin');
+		$heureDebut = $request->get('heureDebut');
+		$heureFin = $request->get('heureFin');
+		$titre = $request->get('titre');
+		$dao = models\DAOUser::getDaoUser();
+		$res = $dao->getUserByMail($mail);
 	}
 	public function calendaradminAction()
 	{

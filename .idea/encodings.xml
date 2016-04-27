@@ -3,7 +3,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendar.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/layout.html.twig" charset="UTF-8" />
   </component>
 </project>
-
