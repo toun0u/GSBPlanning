@@ -118,7 +118,6 @@ class DefaultController extends Controller
 		}
 
 		$json = $tojson;//json_encode($tojson,JSON_UNESCAPED_UNICODE);
-		dump($json);
 
 		return $this->render('SioGsbBundle:Default:calendaradmin.html.twig', array('event' => $json));
 	}
