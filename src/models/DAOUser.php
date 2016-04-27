@@ -92,7 +92,14 @@ class DAOUser
 	}
 	public function getEvenByIdUser($id)
 	{
-		$req = "select lieu, description, dateDebut, dateFin, heureDebut, heureFin, titre from even inner join user on even.id_User = user.id inner join type on even.id_Type=type.id where even.id=".$id;
+		$req = "select * from even inner join user on even.id_User = user.id inner join type on even.id_Type=type.id where even.id=".$id;
+		$res = DAOUser::$monDao->query($req);
+		$lesLignes = $res->fetchAll();
+		return $lesLignes;
+	}
+	public function getAllType()
+	{
+		$req = 'select * from type';
 		$res = DAOUser::$monDao->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
@@ -110,9 +117,10 @@ class DAOUser
 		$req = 'INSERT INTO evenement (description, dateDebut, dateFin) VALUES ('.$title.','.$start.','.$end.')';
 		$res = DAOUser::$monDao->query($req);
 	}
-	public function updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $titre)
+	public function updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id)
 	{
-		//requete qui fait la maj de l'event
+		$req = "update even set lieu = '".$lieu."', description = '".$description."', dateDebut = '".$dateDebut."', dateFin = '".$dateFin."',id_type = ".$idTitre.", heureDebut = '".$heureDebut."', heureFin = '".$heureFin."' where id =".$id;
+		$res = DAOUser::$monDao->query($req);
 	}
 
 }

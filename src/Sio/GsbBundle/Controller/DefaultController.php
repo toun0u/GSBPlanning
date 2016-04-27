@@ -23,6 +23,8 @@ class DefaultController extends Controller
 
 		$dao = models\DAOUser::getDaoUser();
 		$res = $dao->getEvenByIdUser($valeur);
+		$res1 = $dao->getAllType();
+		$session->set('id', $res[0]['id']);
 		$session->set('lieu',$res[0]['lieu']);
 		$session->set('description',$res[0]['description']);
 		$session->set('dateDebut',$res[0]['dateDebut']);
@@ -30,20 +32,27 @@ class DefaultController extends Controller
 		$session->set('heureDebut',$res[0]['heureDebut']);
 		$session->set('heureFin',$res[0]['heureFin']);
 		$session->set('titre',$res[0]['titre']);
-		$msg = $session->get('nom')+$session->get('description')+$session->get('dateDebut')+$session->get('dateFin')+$session->get('heureDebut')+$session->get('heureFin')+$session->get('titre');
-		return $this->render('SioGsbBundle:Default:detailEvent.html.twig', array('even' => $msg));
+		$session->set('alltitre', $res1[0]['titre']);
+		$session->set('allidtitre',$res1[0]['id']);
+		return $this->render('SioGsbBundle:Default:detailEvent.html.twig');
 	}
+
 	public function updateEventAction(Request $request)
 	{
+		$id = $request->get('id');
 		$lieu = $request->get('lieu');
 		$description = $request->get('description');
 		$dateDebut = $request->get('dateDebut');
 		$dateFin = $request->get('dateFin');
 		$heureDebut = $request->get('heureDebut');
 		$heureFin = $request->get('heureFin');
-		$titre = $request->get('titre');
+		$idTitre = $request->get('titre');
 		$dao = models\DAOUser::getDaoUser();
-		$res = $dao->getUserByMail($mail);
+		$res = $dao->updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id);
+
+		$response = $this->forward('SioGsbBundle:Default:calendaradmin');
+
+		return $response;
 	}
 	public function calendaradminAction()
 	{
@@ -89,7 +98,7 @@ class DefaultController extends Controller
 				if ($mdp == $res[0]['mdp'])
 				{
 					$session->set('nom',$res[0]['Nom'].' '.$res[0]['Prenom']);
-					$msg = $session->get('nom');
+
 				}else{
 					$msg = "Authentification incorrect";
 					return $this->render('SioGsbBundle:Default:index.html.twig', array('user' =>$msg));
@@ -98,6 +107,6 @@ class DefaultController extends Controller
 
 		}
 
-		return $this->render('SioGsbBundle:Default:dashboard.html.twig', array('user' =>$msg));
+		return $this->render('SioGsbBundle:Default:dashboard.html.twig');
 	}
 }

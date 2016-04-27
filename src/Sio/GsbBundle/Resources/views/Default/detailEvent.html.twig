@@ -3,20 +3,20 @@
 {% block title %}{{ parent() }} -Detail Event{% endblock %}
 
 {% block content %}
-
+<center>
     <form name="modificationEvent" method="POST" action="{{ path('sio_gsb_updateEvent') }}">
-
-        Lieu<input type="TEXT" name="lieu" value="{{ app.session.get('lieu') }}"><br>
-        Description<input type="TEXT" name="description" value="{{ app.session.get('description') }}"><br>
-        Date Début<input type="date" name="dateDebut" value="{{ app.session.get('dateDebut') }}"><br>
-        Date Fin<input type="date" name="dateFin" value="{{ app.session.get('dateFin') }}"><br>
-        Heure Début<input type="time" name="heureDebut" value="{{ app.session.get('heureDebut') }}"><br>
-        Heure Fin<input type="time" name="heureFin" value="{{ app.session.get('heureFin') }}"><br>
-        Type<input type="TEXT" name="titre" value="{{ app.session.get('titre') }}"><br>
+        <input type="hidden" name="id" value="{{ app.session.get('id') }}"><br>
+        <font color="#f0ffff">Lieu :</font><input type="text" name="lieu" value="{{ app.session.get('lieu') }}"><br>
+        <font color="#f0ffff">Description :</font><input type="text" name="description" value="{{ app.session.get('description') }}"><br>
+        <font color="#f0ffff">Date Début :</font><input type="date" name="dateDebut" value="{{ app.session.get('dateDebut') }}"><br>
+        <font color="#f0ffff">Date Fin :</font><input type="date" name="dateFin" value="{{ app.session.get('dateFin') }}"><br>
+        <font color="#f0ffff">Heure Début :</font><input type="time" name="heureDebut" value="{{ app.session.get('heureDebut') }}"><br>
+        <font color="#f0ffff">Heure Fin :</font><input type="time" name="heureFin" value="{{ app.session.get('heureFin') }}"><br>
+        <font color="#f0ffff">Type :</font><input type="text" name="titre" value="2"><br>
         <input type="submit" name="modifier" value="Modifier">
-    </form>
-    <form name="retour" method="POST" action="{{ path('sio_gsb_retour') }}">
-        <input type="submit" name="retour" value="Annuler">
-    </form>
+    </form><form name="retour" method="POST" action="{{ path('sio_gsb_calendaradmin') }}">
+    <input type="submit" name="retour" value="Annuler">
+</form>
+</center>
 
 {% endblock %}
