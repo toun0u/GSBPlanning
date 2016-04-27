@@ -46,7 +46,7 @@ class DefaultController extends Controller
 		$res = $dao->getEvenByIdUser($valeur);
 
 		$res1 = $dao->getAllType();
-		$session->set('id', $res[0]['id']);
+		$session->set('id', $valeur);
 		$session->set('lieu',$res[0]['lieu']);
 		$session->set('description',$res[0]['description']);
 		$session->set('dateDebut',$res[0]['dateDebut']);
@@ -72,6 +72,7 @@ class DefaultController extends Controller
 		$heureDebut = $request->get('heureDebut');
 		$heureFin = $request->get('heureFin');
 		$idTitre = $request->get('titre');
+		dump($idTitre);
 		$dao = models\DAOUser::getDaoUser();
 		$res = $dao->updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id);
 

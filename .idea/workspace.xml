@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="902d1e82-1edf-4c5b-a1ac-ef2b6032ba75" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/DAOUser.php" afterPath="$PROJECT_DIR$/src/models/DAOUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" afterPath="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GsbPlanning.iws" />
@@ -28,50 +30,34 @@
       <file leaf-file-name="DAOUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.45283">
-              <caret line="132" column="5" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
+            <state vertical-scroll-proportion="-18.0">
+              <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
               <folding>
-                <marker date="1461765629412" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-                <marker date="1461765629412" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-                <marker date="1461765629412" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-                <marker date="1461765629412" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-                <marker date="1461765629412" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-                <marker date="1461765629412" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-                <marker date="1461765629412" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-                <marker date="1461765629412" expanded="true" signature="2268:2364" placeholder="select from ..even..." />
-                <marker date="1461765629412" expanded="true" signature="2515:2522" placeholder="select * fro..even..." />
-                <marker date="1461765629412" expanded="true" signature="2515:2630" placeholder="select lieu,..even..." />
-                <marker date="1461765629412" expanded="true" signature="2515:2631" placeholder="select * fro..even..." />
-                <marker date="1461765629412" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-                <marker date="1461765629412" expanded="true" signature="2941:2948" placeholder="select lieu,..even..." />
-                <marker date="1461765629412" expanded="true" signature="2941:3038" placeholder="select servi..service..." />
-                <marker date="1461765629412" expanded="true" signature="3183:3221" placeholder="delete from ..." />
-                <marker date="1461765629412" expanded="true" signature="3316:3342" placeholder="delete from ..." />
-                <marker date="1461765629412" expanded="true" signature="3316:3344" placeholder="delete from ..." />
-                <marker date="1461765629412" expanded="true" signature="3528:3787" placeholder="insert into ..." />
-                <marker date="1461765629412" expanded="true" signature="3539:3642" placeholder="INSERT INTO ..." />
-                <marker date="1461765629412" expanded="true" signature="3539:3643" placeholder="INSERT INTO ..." />
-                <marker date="1461765629412" expanded="true" signature="3539:3656" placeholder="INSERT INTO ..." />
-                <marker date="1461765629412" expanded="true" signature="3539:3787" placeholder="INSERT INTO ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:3995" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4022" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4054" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4082" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4106" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4134" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4164" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4189" placeholder="update even ..." />
-                <marker date="1461765629412" expanded="true" signature="3971:4194" placeholder="update even ..." />
+                <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
+                <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
+                <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
+                <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
+                <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
+                <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
+                <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
+                <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
+                <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
+                <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
+                <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
+                <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
+                <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
+                <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
+                <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5681293">
-              <caret line="138" column="17" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
+            <state vertical-scroll-proportion="-5.773585">
+              <caret line="69" column="48" selection-start-line="68" selection-start-column="52" selection-end-line="69" selection-end-column="48" />
               <folding>
                 <element signature="e#44#101#0#PHP" expanded="true" />
               </folding>
@@ -89,12 +75,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detailEvent.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detailEvent.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-              <folding />
+            <state vertical-scroll-proportion="0.32362822">
+              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/calendaradmin.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/models/DAOUser.php" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/addEvent.html.twig" />
+        <option value="$PROJECT_DIR$/src/models/DAOUser.php" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig" />
         <option value="$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php" />
       </list>
@@ -482,6 +470,121 @@
       <recent name="C:\wamp64\www\GsbPlanning\web\css" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/encodings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/DAOUser.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/css/cssIndex.css</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/css/detailEvent.css</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
@@ -635,7 +738,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461766478223</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="modif affichage user">
+      <created>1461766700712</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1461766700712</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -662,6 +771,27 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -692,7 +822,8 @@
     <MESSAGE value="push pour mettre tout bien3&#10;" />
     <MESSAGE value="update fonctionnel" />
     <MESSAGE value="add et supp fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="add et supp fonctionnel" />
+    <MESSAGE value="modif affichage user" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif affichage user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -753,37 +884,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
           <folding>
-            <marker date="1461765629412" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461765629412" expanded="true" signature="2268:2364" placeholder="select from ..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2522" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2630" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2631" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461765629412" expanded="true" signature="2941:2948" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2941:3038" placeholder="select servi..service..." />
-            <marker date="1461765629412" expanded="true" signature="3183:3221" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3342" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3344" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3528:3787" placeholder="insert into ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3642" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3643" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3656" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3787" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:3995" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4022" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4054" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4082" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4106" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4134" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4164" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4189" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4194" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -843,37 +958,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
-            <marker date="1461765629412" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461765629412" expanded="true" signature="2268:2364" placeholder="select from ..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2522" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2630" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2631" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461765629412" expanded="true" signature="2941:2948" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2941:3038" placeholder="select servi..service..." />
-            <marker date="1461765629412" expanded="true" signature="3183:3221" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3342" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3344" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3528:3787" placeholder="insert into ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3642" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3643" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3656" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3787" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:3995" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4022" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4054" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4082" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4106" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4134" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4164" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4189" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4194" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -925,37 +1024,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
-            <marker date="1461765629412" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461765629412" expanded="true" signature="2268:2364" placeholder="select from ..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2522" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2630" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2631" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461765629412" expanded="true" signature="2941:2948" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2941:3038" placeholder="select servi..service..." />
-            <marker date="1461765629412" expanded="true" signature="3183:3221" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3342" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3344" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3528:3787" placeholder="insert into ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3642" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3643" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3656" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3787" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:3995" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4022" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4054" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4082" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4106" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4134" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4164" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4189" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4194" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -999,37 +1082,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461765629412" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461765629412" expanded="true" signature="2268:2364" placeholder="select from ..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2522" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2630" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2631" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461765629412" expanded="true" signature="2941:2948" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2941:3038" placeholder="select servi..service..." />
-            <marker date="1461765629412" expanded="true" signature="3183:3221" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3342" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3344" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3528:3787" placeholder="insert into ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3642" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3643" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3656" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3787" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:3995" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4022" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4054" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4082" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4106" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4134" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4164" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4189" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4194" placeholder="update even ..." />
+            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
           </folding>
         </state>
       </provider>
@@ -1148,46 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.45283">
-          <caret line="132" column="5" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
-          <folding>
-            <marker date="1461765629412" expanded="true" signature="725:764" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="918:961" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
-            <marker date="1461765629412" expanded="true" signature="1958:2115" placeholder="select even...even..." />
-            <marker date="1461765629412" expanded="true" signature="2268:2364" placeholder="select from ..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2522" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2630" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2515:2631" placeholder="select * fro..even..." />
-            <marker date="1461765629412" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
-            <marker date="1461765629412" expanded="true" signature="2941:2948" placeholder="select lieu,..even..." />
-            <marker date="1461765629412" expanded="true" signature="2941:3038" placeholder="select servi..service..." />
-            <marker date="1461765629412" expanded="true" signature="3183:3221" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3342" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3316:3344" placeholder="delete from ..." />
-            <marker date="1461765629412" expanded="true" signature="3528:3787" placeholder="insert into ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3642" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3643" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3656" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3539:3787" placeholder="INSERT INTO ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:3995" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4022" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4054" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4082" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4106" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4134" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4164" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4189" placeholder="update even ..." />
-            <marker date="1461765629412" expanded="true" signature="3971:4194" placeholder="update even ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/dashboard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
@@ -1228,20 +1255,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/models/DAOUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="-18.0">
+          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
+          <folding>
+            <marker date="1461767726851" expanded="true" signature="725:764" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="918:961" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1115:1157" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1317:1363" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1525:1563" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1740:1811" placeholder="select * fro..user..." />
+            <marker date="1461767726851" expanded="true" signature="1958:2115" placeholder="select even...even..." />
+            <marker date="1461767726851" expanded="true" signature="2268:2364" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2515:2630" placeholder="select * fro..even..." />
+            <marker date="1461767726851" expanded="true" signature="2777:2795" placeholder="select * fro..type..." />
+            <marker date="1461767726851" expanded="true" signature="2942:3039" placeholder="select servi..service..." />
+            <marker date="1461767726851" expanded="true" signature="3184:3222" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3317:3343" placeholder="delete from ..." />
+            <marker date="1461767726851" expanded="true" signature="3529:3788" placeholder="insert into ..." />
+            <marker date="1461767726851" expanded="true" signature="3972:4190" placeholder="update even ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5681293">
-          <caret line="138" column="17" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
+        <state vertical-scroll-proportion="-5.773585">
+          <caret line="69" column="48" selection-start-line="68" selection-start-column="52" selection-end-line="69" selection-end-column="48" />
           <folding>
             <element signature="e#44#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sio/GsbBundle/Resources/views/Default/detailEvent.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32362822">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

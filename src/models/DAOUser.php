@@ -104,13 +104,7 @@ class DAOUser
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
-	public function getAllType()
-	{
-		$req = 'select * from type';
-		$res = DAOUser::$monDao->query($req);
-		$lesLignes = $res->fetchAll();
-		return $lesLignes;
-	}
+
 	public function getAllService()
 	{
 		$req = 'select service.id, libelle, Nom, Prenom from service inner join user on service.id_User = user.id';
@@ -139,6 +133,7 @@ class DAOUser
 	public function updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id)
 	{
 		$req = "update even set lieu = '".$lieu."', description = '".$description."', dateDebut = '".$dateDebut."', dateFin = '".$dateFin."',id_type = ".$idTitre.", heureDebut = '".$heureDebut."', heureFin = '".$heureFin."' where id =".$id;
+		dump($req);
 		$res = DAOUser::$monDao->query($req);
 	}
 
