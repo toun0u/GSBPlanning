@@ -104,6 +104,13 @@ class DAOUser
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
 	}
+	public function getAllType()
+	{
+		$req = 'select * from type';
+		$res = DAOUser::$monDao->query($req);
+		$lesLignes = $res->fetchAll();
+		return $lesLignes;
+	}
 	public function getAllService()
 	{
 		$req = 'select service.id, libelle, Nom, Prenom from service inner join user on service.id_User = user.id';

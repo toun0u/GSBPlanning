@@ -3,7 +3,7 @@
 {% block title %}{{ parent() }} -Detail Event{% endblock %}
 
 {% block content %}
-<center>
+
     <form name="modificationEvent" method="POST" action="{{ path('sio_gsb_updateEvent') }}">
         <input type="hidden" name="id" value="{{ app.session.get('id') }}"><br>
         <font color="#f0ffff">Lieu :</font><input type="text" name="lieu" value="{{ app.session.get('lieu') }}"><br>
