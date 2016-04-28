@@ -60,6 +60,9 @@
                 <select name="titre">
                 {% for type in lesTypes %}
                     <option value="{{ type.id }}">{{ type.titre }}</option>
+                    {% if type.titre == titre %}
+                        <option value="{{ type.id }}" hidden selected>{{ type.titre }}</option>
+                    {% endif %}
                 {% endfor %}
 
                 </select>
