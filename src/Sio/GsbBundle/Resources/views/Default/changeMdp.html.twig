@@ -1,0 +1,36 @@
+{% extends "SioGsbBundle:Default:layout.html.twig" %}
+
+{% block title %}{{ parent() }} Changer Mot de passe{% endblock %}
+
+{% block content %}
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detailEvent.css') }}"
+          xmlns="http://www.w3.org/1999/html">
+    <div id="bloc_formulaire1">
+    <form name="addEvent" method="POST" action="{{ path('sio_gsb_mdpChange') }}">
+
+        <br>
+        <input type="hidden" name="id" value="{{ app.session.get('user') }}">
+        <div id="titre">
+            <div id="titre_modification_mail" style="font-size: 24px;">Changer Mot de passe</div>
+        </div>
+        <br>
+        <div id="input">
+            <div id="text">
+               Mot de passe :<input type="password" name="mdp" value="" required>
+            </div>
+        </div>
+        <div id="input">
+            <div id="text">
+                Confirmation :<input type="password" name="mdpconf" value="" required>
+            </div>
+        </div>
+        <div id="input">
+            <div id="submit">
+                <input type="submit" name="changer" value="Changer" onblur="verifMdp2(this)">
+            </div>
+        </div>
+    </form>
+
+
+{% endblock %}

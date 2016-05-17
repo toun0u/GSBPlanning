@@ -75,6 +75,20 @@ class DAOUser
 		$lesLignes = $res -> fetchAll();
 		return $lesLignes;
 	}
+	public function getMail()
+	{
+		$req ="select mail from user";
+		$res = DAOUser::$monDao->query($req);
+		$lesLignes = $res -> fetchAll();
+		return $lesLignes;
+	}
+	public function getEventByDate()
+	{
+		$req = "SELECT dateDebut from even where dateDebut between cast(now() as date) and cast(now() +interval 3 day as date)";
+		$res = DAOUser::$monDao->query($req);
+		$lesLignes = $res -> fetchAll();
+		return $lesLignes;
+	}
 
 	public function getAllEvent()
 	{
@@ -128,12 +142,21 @@ class DAOUser
 	{
 		$req = "insert into even (lieu, description, dateDebut, dateFin, id_User, id_type, heureDebut, heureFin, Libelle) values ('".$lieu."', '".$description."', '".$dateDebut."', '".$dateFin."', ".$idUser.", ".$idTitre.", '".$heureDebut."', '".$heureFin."', '".$libelle."')";
 		$res = DAOUser::$monDao->query($req);
-		dump($res);
+
 	}
 	public function updateEvent($lieu, $description, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $id)
 	{
 		$req = "update even set lieu = '".$lieu."', description = '".$description."', dateDebut = '".$dateDebut."', dateFin = '".$dateFin."',id_type = ".$idTitre.", heureDebut = '".$heureDebut."', heureFin = '".$heureFin."' where id =".$id;
-		dump($req);
+		$res = DAOUser::$monDao->query($req);
+	}
+	public function mailChange($mail, $id)
+	{
+		$req = "update user set mail='".$mail."' where id=".$id;
+		$res = DAOUser::$monDao->query($req);
+	}
+	public function mdpChange($mdp, $id)
+	{
+		$req = "update user set mdp='".$mdp."' where id=".$id;
 		$res = DAOUser::$monDao->query($req);
 	}
 

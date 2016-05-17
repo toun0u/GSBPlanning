@@ -5,6 +5,7 @@ namespace Sio\GsbBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use models;
 use Symfony\Component\HTTPFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HTTPFoundation\Session\Session;
 
 class DefaultController extends Controller
@@ -12,7 +13,15 @@ class DefaultController extends Controller
 
 	public function indexAction()
 	{
-		return $this->render('SioGsbBundle:Default:index.html.twig', array('user'=>' '));
+		return $this->render('SioGsbBundle:Default:index.html.twig', array('user'=>''));
+	}
+	public function changeMailAction()
+	{
+		return $this->render('SioGsbBundle:Default:changeMail.html.twig');
+	}
+	public function changeMdpAction()
+	{
+		return $this->render('SioGsbBundle:Default:changeMdp.html.twig');
 	}
 	public function dashboardAction()
 	{
@@ -33,8 +42,28 @@ class DefaultController extends Controller
 
 		$dao = models\DAOUser::getDaoUser();
 		$res = $dao->addEvent($lieu, $description, $libelle, $dateDebut, $dateFin, $heureDebut, $heureFin, $idTitre, $idUser);
-		dump($res);
+
 		$response = $this->forward('SioGsbBundle:Default:calendaradmin');
+
+		return $response;
+	}
+	public function mailChangeAction(Request $request)
+	{
+		$mail = $request->get('mail');
+		$id = $request->get('id');
+		$dao = models\DAOUser::getDaoUser();
+		$res = $dao->mailChange($mail, $id);
+		$response = $this->forward('SioGsbBundle:Default:dashboard');
+
+		return $response;
+	}
+	public function mdpChangeAction(Request $request)
+	{
+		$mdp = $request->get('mdp');
+		$id = $request->get('id');
+		$dao = models\DAOUser::getDaoUser();
+		$res = $dao->mdpChange($mdp, $id);
+		$response = $this->forward('SioGsbBundle:Default:dashboard');
 
 		return $response;
 	}
@@ -123,6 +152,33 @@ class DefaultController extends Controller
 		return $this->render('SioGsbBundle:Default:calendaradmin.html.twig', array('event' => $json));
 	}
 
+	public function sendmailAction()
+	{
+		// Récupération du service
+		$mailer = $this->get('mailer');
+
+		// Séléctionne les events qui sont dans trois jours et les mails des concernés
+		$dao = models\DAOUser::getDaoUser();
+		$lesDates = $dao->getEventByDate();
+		$lesMails = $dao->getMail();
+		if(count($lesDates)<=1)
+		{
+			// Création de l'e-mail : le service mailer utilise SwiftMailer, donc nous créons une instance de Swift_Message
+			$message = \Swift_Message::newInstance()
+				->setSubject('Évenement Prochainement !')
+				->setFrom('infosevent.gsb@gmail.com')
+				->setTo(''.$lesMails.'')
+				->setBody('Vous avez un nouvel événement prochainement ! La date de l\'événement est le :'.$lesDates.'.');
+
+			// Retour au service mailer, nous utilisons sa méthode « send() » pour envoyer notre $message
+			$mailer->send($message);
+
+			// N'oublions pas de retourner une réponse, par exemple une page qui afficherait « L'e-mail a bien été envoyé »
+			return new Response('Email bien envoyé');
+			//return $this->render('ApiBundle:Default:index.html.twig', array('name' => 'Envoi de mail en cours ...'));
+		}
+	}
+
 	public function connexionAction(Request $request)
 	{
 		$session = new Session();
@@ -140,7 +196,7 @@ class DefaultController extends Controller
 				$msg = "identifiant non valide";
 				return $this->render('SioGsbBundle:Default:index.html.twig', array('user' =>$msg));
 			}else{
-				if ($mdp == $res[0]['mdp'])
+				if ($mdp == $res[0]['mdp'] && $res[0]['Type'] == 'admin')
 				{
 
 					$session->set('nom',$res[0]['Prenom'].' '.$res[0]['Nom']);

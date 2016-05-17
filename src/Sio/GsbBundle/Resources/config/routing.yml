@@ -25,3 +25,15 @@ sio_gsb_toaddEvent:
 sio_gsb_suppEvent:
     path: /suppEvent
     defaults: {_controller: SioGsbBundle:Default:suppEvent}
+sio_gsb_changeMail:
+    path: /changeMail
+    defaults: {_controller: SioGsbBundle:Default:changeMail}
+sio_gsb_changeMdp:
+    path: /changeMdp
+    defaults: {_controller: SioGsbBundle:Default:changeMdp}
+sio_gsb_mailChange:
+    path: /mailChange
+    defaults: {_controller: SioGsbBundle:Default:mailChange}
+sio_gsb_mdpChange:
+    path: /mdpChange
+    defaults: {_controller: SioGsbBundle:Default:mdpChange}
