@@ -37,3 +37,6 @@ sio_gsb_mailChange:
 sio_gsb_mdpChange:
     path: /mdpChange
     defaults: {_controller: SioGsbBundle:Default:mdpChange}
+sio_gsb_sendMail:
+    path: /sendMail
+    defaults: {_controller: SioGsbBundle:Default:sendMail}

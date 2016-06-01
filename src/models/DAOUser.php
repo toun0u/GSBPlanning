@@ -3,10 +3,10 @@ namespace models;
 
 class DAOUser
 {
-  	private static $serveur='mysql:host=172.18.204.2';
+  	private static $serveur='mysql:host=127.0.0.1';
   	private static $bdd='dbname=gsb';   		
   	private static $user='root' ;    		
-  	private static $mdp='gsb' ;	
+  	private static $mdp='' ;
 	private static $monDao;
 	private static $monDaoGsb = null;
 
