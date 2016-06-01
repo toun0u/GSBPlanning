@@ -168,7 +168,7 @@ class DefaultController extends Controller
 		{
 			// Création de l'e-mail : le service mailer utilise SwiftMailer, donc nous créons une instance de Swift_Message
 			$message = \Swift_Message::newInstance()
-				->setSubject('Évenement Prochainement !')
+				->setSubject('Événement Prochainement !')
 				->setFrom('infosevent.gsb@gmail.com')
 				->setTo('lucas.grisolet@gmail.com')
 				->setBody('Vous avez un nouvel événement prochainement ! La date est le :'.$lesDates[0]['dateDebut'].'.');
